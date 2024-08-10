@@ -7,51 +7,6 @@
 </head>
 <body>
 Hello,everyone!
-    <script>
-        var div=document.getElementById("div");
-        var button=document.getElementById("button");
-        function moveUp(){
-            var styles=document.defaultView.getComputedStyle(div,null);
-            bottom=parseInt(styles.bottom);
-            if(bottom<0){
-                bottom+=5;
-                div.style.bottom=bottom+"px";
-            }else{
-                clearInterval(timer);
-                timer=null;
-            }
-        }
-        function moveDown(){
-            var styles=document.defaultView.getComputedStyle(div,null);
-            bottom=parseInt(styles.bottom);
-            if(bottom>-308){
-                bottom-=5;
-                div.style.bottom=bottom+"px";
-            }else{
-                clearInterval(timer);
-                timer=null;
-            }
-            
-        }
-        var timer=null;
-        var time_2=null;
-        time_2=setTimeout(function(){
-            timer=setInterval(moveUp,50);
-        },5000);
-        button.onclick=function(){
-            timer_2=null;
-            if(timer==null){
-                timer=setInterval(moveDown,50);
-            }else{
-                clearInterval(timer);
-                timer=null;
-                timer=setInterval(moveDown,50);
-            }
-            time_2=setTimeout(function(){
-                timer=setInterval(moveUp,50);
-            },5000);
-        };
-
-    </script>
+ 
 </body>
 </html>
