@@ -1,60 +1,14 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="cn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>这是我的个人网页</title>
+    <title>2024-这是我的个人网页</title>
 </head>
 <body>
-    <div id="div" style="position: fixed;right: 0px;bottom: -307.33px;">
-        <button id="button">关闭</button></br>
-        <img src="images/熊猫人.jpg" style="height: 280px;width: 380px;">
-    </div>
-    <script>
-        var div=document.getElementById("div");
-        var button=document.getElementById("button");
-        function moveUp(){
-            var styles=document.defaultView.getComputedStyle(div,null);
-            bottom=parseInt(styles.bottom);
-            if(bottom<0){
-                bottom+=5;
-                div.style.bottom=bottom+"px";
-            }else{
-                clearInterval(timer);
-                timer=null;
-            }
-        }
-        function moveDown(){
-            var styles=document.defaultView.getComputedStyle(div,null);
-            bottom=parseInt(styles.bottom);
-            if(bottom>-308){
-                bottom-=5;
-                div.style.bottom=bottom+"px";
-            }else{
-                clearInterval(timer);
-                timer=null;
-            }
-            
-        }
-        var timer=null;
-        var time_2=null;
-        time_2=setTimeout(function(){
-            timer=setInterval(moveUp,50);
-        },5000);
-        button.onclick=function(){
-            timer_2=null;
-            if(timer==null){
-                timer=setInterval(moveDown,50);
-            }else{
-                clearInterval(timer);
-                timer=null;
-                timer=setInterval(moveDown,50);
-            }
-            time_2=setTimeout(function(){
-                timer=setInterval(moveUp,50);
-            },5000);
-        };
-
-    </script>
+   
+  这是一个测试的网页
+哈哈哈哈
+我要看看
 </body>
 </html>
