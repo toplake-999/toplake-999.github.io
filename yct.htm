@@ -95,7 +95,7 @@ window.onload = function() {
 		<tr>
 			<td>
 				<h3 style="text-align:center;">
-					<span style="background-color:#FFFFFF;color:#4C33E5;font-family:FangSong_GB2312;">2024-08-11&nbsp; 星期天</span> <span id="xkxs">00000</span> <!--时间 ‘ 时 / 分 / 秒 ’-->
+					<span style="background-color:#FFFFFF;color:#4C33E5;font-family:FangSong_GB2312;">2024-08-11&nbsp; 星期天</span> <span     id="xkxs"  >00000</span> <!--时间 ‘ 时 / 分 / 秒 ’-->
 				</h3>
 				<p class="subTitle">
 					<span style="background-color:#FFFFFF;color:#4C33E5;"> </span>
@@ -109,59 +109,6 @@ window.onload = function() {
 		</tr>
 	</tbody>
 </table>
- <script> 
-    function updateClock() {
-      var now = new Date(); 
-      var hours = now.getHours();  
-      var minutes = now.getMinutes(); 
-      var seconds = now.getSeconds();  
- 
-      
-      hours = checkTime(hours);
-      minutes = checkTime(minutes);
-      seconds = checkTime(seconds);
-      
-     
-      if(hours > 12 ) {
-          var timeString = "下午" + hours + ":" + minutes + ":" + seconds;
-      } else {
-          var timeString = "早上" + hours + ":" + minutes + ":" + seconds;
-      }
-      
-     
-      document.getElementById('xkxs').innerText = timeString;
-      
-     
-      setTimeout(updateClock, 1000);
-    }
-    
-    function checkTime(i) {
-      if (i < 10) {
-        i = "0" + i;
-      }
-      return i;
-    }
-    
-    
-    window.onload = function() {
-      updateClock();
-    };
-    
-    
-    function getCurrentDate() {
-      var today = new Date();
-      var date = today.getFullYear() + '/' + ('0' + (today.getMonth() + 1)).slice(-2) + '/' + ('0' + today.getDate()).slice(-2);
-      var xkxs = today.getDay()
-      var weekdays = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']; // 星期几名称的数组
-      var date1 = weekdays[xkxs]
-      document.getElementById('xkxs-date').textContent = date;
-      document.getElementById('xkxs-xq').textContent = date1;
-    }
-    getCurrentDate()
-
-
-</script> 
-
 
 
 
@@ -360,5 +307,58 @@ D、根据图像可知，固体质量减小到最小值，反应已结束，d点
 <br />
 	</div>
 </div>
+
+ <script> 
+    function updateClock() {
+      var now = new Date(); 
+      var hours = now.getHours();  
+      var minutes = now.getMinutes(); 
+      var seconds = now.getSeconds();  
+ 
+      
+      hours = checkTime(hours);
+      minutes = checkTime(minutes);
+      seconds = checkTime(seconds);
+      
+     
+      if(hours > 12 ) {
+          var timeString = hours + ":" + minutes + ":" + seconds;
+      } else {
+          var timeString = hours + ":" + minutes + ":" + seconds;
+      }
+      
+     
+      document.getElementById('xkxs').innerText = timeString;
+      
+     
+      setTimeout(updateClock, 1000);
+    }
+    
+    function checkTime(i) {
+      if (i < 10) {
+        i = "0" + i;
+      }
+      return i;
+    }
+    
+    
+    window.onload = function() {
+      updateClock();
+    };
+    
+    
+    function getCurrentDate() {
+      var today = new Date();
+      var date = today.getFullYear() + '/' + ('0' + (today.getMonth() + 1)).slice(-2) + '/' + ('0' + today.getDate()).slice(-2);
+      var xkxs = today.getDay()
+      var weekdays = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']; // 星期几名称的数组
+      var date1 = weekdays[xkxs]
+      document.getElementById('xkxs-date').textContent = date;
+      document.getElementById('xkxs-xq').textContent = date1;
+    }
+    getCurrentDate()
+
+
+</script> 
 
 
