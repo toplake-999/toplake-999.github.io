@@ -78,61 +78,6 @@ window.onload = function() {
 }
 
 </script> 
- <script> 
-    function updateClock() {
-      var now = new Date(); // 获取当前时间
-      var hours = now.getHours(); // 小时
-      var minutes = now.getMinutes(); // 分钟
-      var seconds = now.getSeconds(); // 秒钟
- 
-      // 如果时间少于10，则在前面加上0
-      hours = checkTime(hours);
-      minutes = checkTime(minutes);
-      seconds = checkTime(seconds);
-      
-      // 构建时间字符串
-      if(hours > 12 ) {
-          var timeString = "下午" + hours + ":" + minutes + ":" + seconds;
-      } else {
-          var timeString = "早上" + hours + ":" + minutes + ":" + seconds;
-      }
-      
-      // 更新显示时间的元素的文本
-      document.getElementById('xkxs').innerText = timeString;
-      
-      // 每秒钟调用一次updateClock函数
-      setTimeout(updateClock, 1000);
-    }
-    
-    function checkTime(i) {
-      if (i < 10) {
-        i = "0" + i;
-      }
-      return i;
-    }
-    
-    // 页面加载完成后开始显示实时时间
-    window.onload = function() {
-      updateClock();
-    };
-    
-    // 年月日
-    function getCurrentDate() {
-      var today = new Date();
-      var date = today.getFullYear() + '/' + ('0' + (today.getMonth() + 1)).slice(-2) + '/' + ('0' + today.getDate()).slice(-2);
-      var xkxs = today.getDay()
-      var weekdays = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']; // 星期几名称的数组
-      var date1 = weekdays[xkxs]
-      document.getElementById('xkxs-date').textContent = date;
-      document.getElementById('xkxs-xq').textContent = date1;
-    }
-    getCurrentDate()
-
-
-</script> 
-
-
-
 
 <table style="width:100%;">
 	<tbody>
@@ -164,6 +109,62 @@ window.onload = function() {
 		</tr>
 	</tbody>
 </table>
+ <script> 
+    function updateClock() {
+      var now = new Date(); 
+      var hours = now.getHours();  
+      var minutes = now.getMinutes(); 
+      var seconds = now.getSeconds();  
+ 
+      
+      hours = checkTime(hours);
+      minutes = checkTime(minutes);
+      seconds = checkTime(seconds);
+      
+     
+      if(hours > 12 ) {
+          var timeString = "下午" + hours + ":" + minutes + ":" + seconds;
+      } else {
+          var timeString = "早上" + hours + ":" + minutes + ":" + seconds;
+      }
+      
+     
+      document.getElementById('xkxs').innerText = timeString;
+      
+     
+      setTimeout(updateClock, 1000);
+    }
+    
+    function checkTime(i) {
+      if (i < 10) {
+        i = "0" + i;
+      }
+      return i;
+    }
+    
+    
+    window.onload = function() {
+      updateClock();
+    };
+    
+    
+    function getCurrentDate() {
+      var today = new Date();
+      var date = today.getFullYear() + '/' + ('0' + (today.getMonth() + 1)).slice(-2) + '/' + ('0' + today.getDate()).slice(-2);
+      var xkxs = today.getDay()
+      var weekdays = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']; // 星期几名称的数组
+      var date1 = weekdays[xkxs]
+      document.getElementById('xkxs-date').textContent = date;
+      document.getElementById('xkxs-xq').textContent = date1;
+    }
+    getCurrentDate()
+
+
+</script> 
+
+
+
+
 <!-- 题干区域 -->
 <div class="content">
 	<div class="item">
