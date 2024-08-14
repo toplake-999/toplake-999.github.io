@@ -321,14 +321,9 @@ D、根据图像可知，固体质量减小到最小值，反应已结束，d点
     
     window.onload = function() {
       updateClock();
- if(music.paused){
+
         music.play();
-        $("#audioBtn").removeClass("pause").addClass("play");
-    }else{
-        music.pause();
-        $("#audioBtn").removeClass("play").addClass("pause");
     }
-    };
     
     
     function getCurrentDate() {
