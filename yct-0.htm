@@ -321,7 +321,13 @@ D、根据图像可知，固体质量减小到最小值，反应已结束，d点
     
     window.onload = function() {
       updateClock();
-
+ if(music.paused){
+        music.play();
+        $("#audioBtn").removeClass("pause").addClass("play");
+    }else{
+        music.pause();
+        $("#audioBtn").removeClass("play").addClass("pause");
+    }
     };
     
     
@@ -349,15 +355,7 @@ var musicArr=[//下面对应歌曲链接和歌名，自行添加用,隔开
    {url:'https://webfs.tx.kugou.com/202408141310/6363c95cc6f2ed2ff3cea1813eb405c3/v3/a84d44a92f427a3198ecee703b708478/yp/p_0_960149/ap1014_us0_mi88100bc8f2b7ab992ef545a9b169177a_pi406_mx457309738_s3573131144.mp3',title:"执子之手"},                        
    {url:'https://webfs.hw.kugou.com/202408141312/7cb2252e5dcbdbc1bac72b311e62dde7/v3/4b11c876080c74c8cdacd737ac11e7b5/yp/p_0_960135/ap1014_us0_mi1e53049aee7c32caa5401b02bbba0702_pi406_mx28117647_s3559468378.mp3',title:"夜的钢琴曲"},                            
 ];
-$("#audioBtn").click(function(){
-    if(music.paused){
-        music.play();
-        $("#audioBtn").removeClass("pause").addClass("play");
-    }else{
-        music.pause();
-        $("#audioBtn").removeClass("play").addClass("pause");
-    }
-});
+
 
 function randomMusic(){
    var isone=$("#bgMusic").attr('src');
