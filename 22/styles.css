@@ -13,7 +13,7 @@
   cursor: pointer; /* 鼠标指针变为手型 */
   padding: 1px; /* 内边距 */
   margin-right: 11px; /* 外边距 */
-  border-bottom: 2px solid transparent; /* 底部边框 */
+  border-bottom: 5px solid transparent; /* 底部边框 */
 }
 
 /* 鼠标悬停时的选项卡按钮样式 */
