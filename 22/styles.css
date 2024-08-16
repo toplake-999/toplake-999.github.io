@@ -24,6 +24,6 @@
 .content {
   display: none; /* 默认隐藏内容区域 */
   padding: 10px; /* 内边距 */
-  height: 1080px;
+  height: 2080px;
   wide: 100%;
 }
