@@ -1,361 +1,52 @@
-  <style>
-        /*
-        Safari （苹果）系列浏览器暂不支持 @page 样式
-        参考：https://developer.mozilla.org/en-US/docs/Web/CSS/@page
-         */
-        @page {
-            size: A4 portrait;
-            margin: 1.2cm;
-        }
+<!DOCTYPE html>
+<html>
 
-        body, header, h1, h2, h3, h4, h5, h6, p, ul, ol, form, hr {
-            margin: 0;
-            padding: 0;
-            font-family: SimSun, NSimSun, FangSong, FangSong_GB2312, serif;
-            margin-block-start: 0px;
-            margin-block-end: 0px;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-        }
-        body {
-            width: 18.6cm;
-            font-size: 40px;
-	    background-color: #FFFFFF;
-        }
-        ul li {
-            list-style-type: none;
-        }
-        a {
-            text-decoration: none;
-            color: #000;
-        }
-        header {
-            margin-bottom: 0.3cm;
-            border-bottom: 1px solid #00FF00;
-        }
-        header.title, header.subTitle {
-            text-align: left;
-        }
-        .title {
-            font-size: 37px;
-            margin-bottom: 0.3cm;
-        }
-        .subTitle {
-            font-size: 37px;
-        }
-        .item {
-            font-size: 37px;
-            margin-bottom: 0.2cm;
-        }
-        .item-title {
-            font-weight: bolder;
-            margin-bottom: 0.2cm;
-        }
-        .item-content {
-            font-size: 37px;
-        }
-        .item-content img {
-            max-width: 150%;
-            vertical-align: middle;
+<head>
+    <meta charset="utf-8">
+    <meta name="Author" content="Noah">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>科学作业</title>
+    <meta name="keywords"
+        content="科学暑假作业" />
+    <meta name="description"
+        content="科学 作业" />
+    <link rel="stylesheet" href="./css/new.css">
+    <script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
+    <style type="text/css">
+        .ms1 {
+            position: relative;
+            top: -28px;
+            float: right;
+            color: #02a982;
         }
     </style>
-    <style media="screen">
-        /* 显示时，使用 body 模拟打印区域 */
-        body {
-            padding: 1.5cm;
-            margin: 0 auto;
-            border: 5px solid #ffd0d0;
-        }
-    </style>
-<br />
-<script type="text/javascript">     
-    function doPrint() {      
-        bdhtml=window.document.body.innerHTML;      
-        sprnstr="<!--startprint-->";      
-        eprnstr="<!--endprint-->";      
-        prnhtml=bdhtml.substr(bdhtml.indexOf(sprnstr)+17);      
-        prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr));      
-        window.document.body.innerHTML=prnhtml;   
-        window.print();      
-}      
-</script>  
+</head>
 
-<!-- 头部区域 -->
+<body>
+    <div id="all">
+        <div class="wrapper">
+            <div class="main">
+                <h1>科学暑假作业情况</h1>
+
+                <div class="content">
+                    <div class="content-top">
+                        <h2><a href="https://toplake-999.github.io/yct.htm"><span style="color:#FFFFFF;"><strong>易错题摘录</strong></span></a></h2><br />
+                       <h2><a href="https://toplake-999.github.io/TJ0.htm"><span style="color:#FFFFFF;"><strong>积分统计</strong></span></a></h2><br />
+                
 
 
+                    </div>
+                </div>
+                <p class="footer">© 2024  Mr.Hua All Rights Reserved</p>
+            </div>
+            <ul class="bg-bubbles">
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/ms.js"></script>
+</body>
 
-<!--startprint-->
-<table style="width:100%;">
-	<tbody>
-		<tr>
-			<td>
-				<h1 style="text-align:center;">
-					<span style="color:#E53333;font-size: 57px;font-family:&quot;"><strong>第五次科学暑假作业提交 易错题摘录</strong></span>
-				</h1>
-			</td>
-		</tr>
-	</tbody>
-</table>
-<table style="width:100%;">
-	<tbody>
-		<tr>
-			<td>
-				<h3 style="text-align:center;font-size: 37px;color:#0000FF;">
-					<span >现在是：</span> <span id="xkxs-date">0000         </span> <span     id="xkxs"  >00000</span> <!--时间 ‘ 时 / 分 / 秒 ’-->
-				</h3>
-				<p class="subTitle">
-					<span style="background-color:#FFFFFF;color:#4C33E5;"> </span>
-				</p>
-				<hr />
-				<br />
-				<p>
-					<br />
-				</p>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-
-
-<!-- 题干区域 -->
-<div class="content">
-	<div class="item">
-		<div class="item-title">
-		</div>
-		<div class="item-content">
-			1. 分析图①﹣④，下列说法中正确的是（&emsp;&emsp;）
-			<p>
-				<img width="349" height="270" src="http://question.91chengguo.com/cg/e8d4ef953b4043a8a7a9897cbbec5cf3/20240412171804/696599a7e8234598924f0cde29be1a04_1092x844.png" /> 
-			</p>
-<br />
-A. 图①表示树林里一天中CO <sub>2</sub>浓度变化的情况 <br />
-B. 图②B点显示此时某绿色植物没有进行光合作用和呼吸作用 <br />
-C. 图③曲线A→B段表示肺完成一次呼气过程 <br />
-D. 图④表示晴朗高温状态下绿色植物蒸腾作用强度变化的情况
-		</div>
-		<p>
-			<br />
-		</p>
-		<p>
-			<br />
-<strong><span style="color:#9933E5;">【详解】</span></strong>
-		</p>
-		<p>
-			A、图①表示树林里一天中O<sub>2</sub>浓度变化的情况，A错误；
-		</p>
-		<p>
-			B、图②B点显示此时某绿色植物进行光合作用强度和呼吸作用强度相同，而不是没有进行光合作用和呼吸作用，B错误；
-		</p>
-		<p>
-			C、图③曲线A→B段肺内气压低于外界气压，表示肺完成一次吸气过程，C错误；
-		</p>
-		<p>
-			D、图④表示晴朗高温状态下绿色植物蒸腾作用强度变化，D正确。
-		</p>
-		<p>
-			故选D。
-		</p>
-<br />
-		<p>
-			<u><span style="background-color:#FFE500;color:#003399;"><em>（1）植物白天进行光合作用、呼吸作用。白天有光照，光合作用旺盛，呼吸作用相对较弱；夜晚无光不能进行光合作用，只能进行呼吸作用。</em></span></u> 
-		</p>
-		<p>
-			<u><span style="background-color:#FFE500;color:#003399;"><em>（2）呼气时，肺内气压上升，气体呼出；吸气时，肺内气压下降，气体吸入。</em></span></u> 
-		</p>
-		<p>
-			<u><span style="background-color:#FFE500;color:#003399;"><em>（3）蒸腾作用是植物的一种重要生理功能，它主要在叶片进行，气孔的张开、闭合控制着蒸腾作用，气孔的开闭又受环境（比如：光照强度）的影响。在一定限度内，光照强度越强，蒸腾作用越强。</em></span></u> 
-		</p>
-	
-		<br />
-		<hr />
-		<p>
-			<br />
-		</p>
-<br />
-	</div>
-	
-	<div class="item-title">
-	</div>
-	<div class="item-content">
-		2. 小明在做氯酸钾制取氧气（2KClO <sub>3</sub> <img src="http://question.91chengguo.com/xkw_weChat/xkw_weChat/38_27__20211231172638203_664_xDpEB1Lk.jpg" width="38" height="27" /> <sub> </sub>2KC1+3O <sub>2</sub>↑）实验时，绘制了试管中固体物质质量随时间变化的图像（如图），下列相关说法正确的是（&emsp;&emsp;） <br />
-<img src="http://question.91chengguo.com/xkw_weChat/xkw_weChat/20220920081307303_349_9x2nEIVU.png" alt="" width="144px" height="130px" /> <br />
-A. a点表示氯酸钾的质量 <br />
-B. b点表示氯酸钾和二氧化锰的质量 <br />
-C. c点表示氯酸钾、氯化钾和二氧化锰的质量 <br />
-D. d点表示氯化钾和二氧化锰的质量
-	</div>
-	<div class="item-content">
-		<br />
-<br />
-<strong><span style="color:#9933E5;">【详解】</span></strong><br />
-A、根据图像可知，a点时反应还没有开始，表示氯酸钾和二氧化锰的质量，说法错误；<br />
-B、根据图像可知，固体质量已减小，反应正在进行中，b点表示未反应氯酸钾和二氧化锰的质量以及生成氯化钾的质量，说法错误；<br />
-C、根据图像可知，固体质量减小到最小值，反应已结束，c点表示氯化钾和二氧化锰的质量，说法错误；<br />
-D、根据图像可知，固体质量减小到最小值，反应已结束，d点表示氯化钾和二氧化锰的质量，说法正确。<br />
-故选：D。 <br />
-	</div>
-	
-		<br />
-		<br />
-		<hr />
-		<p>
-			<br />
-		</p>
-           
-	</div>
-	
-	<div class="item">
-		<div class="item-title">
-		</div>
-		<div class="item-content">
-			3. 鸡蛋是我们生活中最常见也是补充蛋白质最方便的食物来源。其蛋壳的主要成分是碳酸钙。某科学兴趣小组取25g鸡蛋壳于烧杯中，缓慢加入稀盐酸（杂质不溶于水，也不与稀盐酸反应），剩余固体质量与加入稀盐酸的质量关系如图所示。请根据要求完成下列问题：
-			<p>
-				<img width="174" height="177" src="http://question.91chengguo.com/cg/dae0b915bc0e49b895b2ef815bc42428/20240422102135/7e15f42321e04ad19fd4a78301c355e0_174x177.png" /> 
-			</p>
-			<p>
-				（碳酸钙与稀盐酸反应的化学方程式：CaCO<sub>3</sub>+2HCl＝CaCl<sub>2</sub>+CO<sub>2</sub>↑+H<sub>2</sub>O）
-			</p>
-			<p>
-				（1）实验时当观察到 <u>&emsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;</u>现象时，说明鸡蛋壳已完全反应；
-			</p>
-			<p>
-				（2）加入200g稀盐酸时，烧杯内溶液中的溶质有 <u>&emsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;</u>。（写化学式）
-			</p>
-			<p>
-				（3）当鸡蛋壳恰好完全反应时，请计算产生CO<sub>2</sub>的质量及所得溶液的溶质质量分数。
-			</p>
-		</div>
-		<p>
-			<br />
-		</p>
-		<p>
-			<br />
-<strong><span style="color:#9933E5;">【详解】</span></strong> 
-		</p>
-		<p>
-			（1）碳酸钙和稀盐酸反应会生成二氧化碳气体，实验时当观察到无气泡产生现象时，说明鸡蛋壳已完全反应；
-		</p>
-		<p>
-			（2）加入200g稀盐酸时，烧杯内溶液中的溶质有CaCl<sub>2</sub>、HCl；
-		</p>
-		<p>
-			（3）由图像可只，鸡蛋壳中碳酸钙的质量为：25g﹣5g＝20g，
-		</p>
-		<p>
-			设产生CO<sub>2</sub>的质量为x，生成氯化钙的质量为y。
-		</p>
-		<p>
-			CaCO<sub>3</sub>+2HCl＝CaCl<sub>2</sub>+H<sub>2</sub>O+CO<sub>2</sub>↑
-		</p>
-		<p>
-			100           111        44
-		</p>
-		<p>
-			20g            y        &nbsp;x
-		</p>
-		<p>
-			<img class="CgMathImg" src="http://question.91chengguo.com/cg/5b13429cc1f0402d81864a68eb547ca4/20240422170501/adcf948879c44ead9accca65a45049c9_109x43.jpg" />，<img class="CgMathImg" src="http://question.91chengguo.com/cg/5b13429cc1f0402d81864a68eb547ca4/20240422170501/4da31bf17bb646279a077e7f29cdd449_109x46.jpg" /> 
-		</p>
-		<p>
-			x＝8.8g，y＝22.2g
-		</p>
-		<p>
-			答：鸡蛋壳完全反应后，产生CO<sub>2</sub>的质量为8.8g；
-		</p>
-		<p>
-			（3）当鸡蛋壳恰好完全反应时，所得不饱和溶液的质量为：20g+188.8g﹣8.8g＝200g，则所得溶液的溶质质量分数为：<img class="CgMathImg" src="http://question.91chengguo.com/cg/5b13429cc1f0402d81864a68eb547ca4/20240422170501/1ab799ebd4804a2f9adbfc57132f50f4_73x46.jpg" />100%＝11.1%。
-		</p>
-		<p>
-			答：当鸡蛋壳恰好完全反应时，所得溶液的溶质质量分数为11.1%。
-		</p>
-		<p>
-			<span style="background-color:#FFE500;color:#003399;"><em><u>（1）根据碳酸钙和稀盐酸反应会生成二氧化碳气体进行分析；</u></em></span> 
-		</p>
-		<p>
-			<span style="background-color:#FFE500;color:#003399;"><em><u>（2）根据加入200g稀盐酸时，稀盐酸是过量的进行分析；</u></em></span> 
-		</p>
-		<p>
-			<span style="background-color:#FFE500;color:#003399;"><em><u>（3）根据图中数据求出碳酸钙的质量，再根据化学方程式求出产生二氧化碳的质量；</u></em></span> 
-		</p>
-		<p>
-			<span style="background-color:#FFE500;color:#003399;"><em><u>根据化学方程式求出生成氯化钙的质量，再根据溶质质量分数的计算公式来计算。</u></em></span> 
-		</p>
-		<p>
-                  <br />
-			
-			<br />
-			<hr />
-			
-			<br />
-			</p>
-		<h2>
-			<span style="text-align:right;color:#003399;font-size: 33px;background-color:#DFC5A4;"><strong>  Collected by Mr. Hua</strong></span>
-		</h2>
-		
-<br />
-	</div>
-</div>
-<!--endprint-->  
- <button type="button" οnclick="doPrint()">打印</button> 
- <script> 
-    function updateClock() {
-      var now = new Date(); 
-      var hours = now.getHours();  
-      var minutes = now.getMinutes(); 
-      var seconds = now.getSeconds();  
- 
-      
-      hours = checkTime(hours);
-      minutes = checkTime(minutes);
-      seconds = checkTime(seconds);
-      
-     
-      if(hours > 12 ) {
-          var timeString = hours + ":" + minutes + ":" + seconds;
-      } else {
-          var timeString = hours + ":" + minutes + ":" + seconds;
-      }
-      
-     
-      document.getElementById('xkxs').innerText = timeString;
-      
-     
-      setTimeout(updateClock, 1000);
-    }
-    
-    function checkTime(i) {
-      if (i < 10) {
-        i = "0" + i;
-      }
-      return i;
-    }
-    
-    
-    window.onload = function() {
-      updateClock();
-  var audio = new Audio('https://raw.githubusercontent.com/toplake-999/toplake-999.github.io/main/YDGQQ5.mp3');
-   audio.loop = true;
-   audio.play();
-    };
-    
-    
-    function getCurrentDate() {
-      var today = new Date();
-      var date = today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + today.getDate()).slice(-2);
-      var xkxs = today.getDay()
-      var weekdays = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']; // 星期几名称的数组
-      var date1 = weekdays[xkxs]
-      document.getElementById('xkxs-date').textContent = date;
-      document.getElementById('xkxs-xq').textContent = date1;
-    }
-    getCurrentDate()
-
-
-
-</script> 
-
-
-
-
-
+</html>
