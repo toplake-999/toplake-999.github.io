@@ -1,10 +1,7 @@
 // 获取所有的选项卡按钮和内容区域元素
 const tabs = document.querySelectorAll('.tab');
 const contents = document.querySelectorAll('.content');
-window.onload = function(){
-    var button = document.getElementById('tab1');
-    button.addEventListener("click",function());
-}
+
 // 为每个选项卡按钮添加点击事件监听器
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
