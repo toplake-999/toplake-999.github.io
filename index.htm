@@ -342,5 +342,17 @@ D、根据图像可知，固体质量减小到最小值，反应已结束，d点
 
 </script> 
 
+<script type="text/javascript">     
+    function doPrint() {      
+        bdhtml=window.document.body.innerHTML;      
+        sprnstr="<!--startprint-->";      
+        eprnstr="<!--endprint-->";      
+        prnhtml=bdhtml.substr(bdhtml.indexOf(sprnstr)+17);      
+        prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr));      
+        window.document.body.innerHTML=prnhtml;   
+        window.print();      
+}      
+</script>  
+
 
 
