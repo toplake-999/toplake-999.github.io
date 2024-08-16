@@ -2,29 +2,29 @@
 .tab-container {
   display: flex; /* 水平排列选项卡按钮 */
   justify-content: center; /* 居中对齐 */
-  padding: 10px; /* 内边距 */
-  background-color: #f2f2f2; /* 背景颜色 */
-  height: 100px;
-  wide: 250px;
+  padding: 5px; /* 内边距 */
+  background-color: #FFFFF0; /* 背景颜色 */
+  height: 40px;
+  
 }
 
 /* 选项卡按钮样式 */
 .tab {
   cursor: pointer; /* 鼠标指针变为手型 */
   padding: 1px; /* 内边距 */
-  margin-right: 1px; /* 外边距 */
+  margin-right: 11px; /* 外边距 */
   border-bottom: 2px solid transparent; /* 底部边框 */
 }
 
 /* 鼠标悬停时的选项卡按钮样式 */
 .tab:hover {
-  border-bottom: 2px solid #4CAF50; /* 底部边框颜色 */
+  border-bottom: 3px solid #4CAF50; /* 底部边框颜色 */
 }
 
 /* 内容区域样式 */
 .content {
   display: none; /* 默认隐藏内容区域 */
   padding: 10px; /* 内边距 */
-  height: 1580px;
-  wide: 100%;
+  height: 2080px;
+  width:100%；
 }
