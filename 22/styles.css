@@ -4,14 +4,15 @@
   justify-content: center; /* 居中对齐 */
   padding: 10px; /* 内边距 */
   background-color: #f2f2f2; /* 背景颜色 */
-  height: 30px;
+  height: 50px;
+  wide: 100%;
 }
 
 /* 选项卡按钮样式 */
 .tab {
   cursor: pointer; /* 鼠标指针变为手型 */
-  padding: 10px; /* 内边距 */
-  margin-right: 10px; /* 外边距 */
+  padding: 1px; /* 内边距 */
+  margin-right: 1px; /* 外边距 */
   border-bottom: 2px solid transparent; /* 底部边框 */
 }
 
@@ -24,6 +25,6 @@
 .content {
   display: none; /* 默认隐藏内容区域 */
   padding: 10px; /* 内边距 */
-  height: 2080px;
+  height: 1580px;
   wide: 100%;
 }
