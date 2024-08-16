@@ -4,8 +4,8 @@
   justify-content: center; /* 居中对齐 */
   padding: 10px; /* 内边距 */
   background-color: #f2f2f2; /* 背景颜色 */
-  height: 50px;
-  wide: 100%;
+  height: 100px;
+  wide: 250px;
 }
 
 /* 选项卡按钮样式 */
