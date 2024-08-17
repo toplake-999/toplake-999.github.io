@@ -3,8 +3,6 @@ const tabs = document.querySelectorAll('.tab');
 const contents = document.querySelectorAll('.content');
 
 
-let content = document.querySelector('tab1');
-    content.style.display = 'block';
 
 
 
