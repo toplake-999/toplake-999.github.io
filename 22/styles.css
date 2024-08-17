@@ -3,8 +3,8 @@
   display: flex; /* 水平排列选项卡按钮 */
   justify-content: center; /* 居中对齐 */
   padding: 5px; /* 内边距 */
-  background-color: #FFFFF0; /* 背景颜色 */
-  height: 40px;
+  background-color: #FFFFFF; /* 背景颜色 */
+  height: 50px;
   
 }
 
