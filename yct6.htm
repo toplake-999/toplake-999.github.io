@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>科学易错题</title>
-     <style>
+    <style>
         /*
         Safari （苹果）系列浏览器暂不支持 @page 样式
         参考：https://developer.mozilla.org/en-US/docs/Web/CSS/@page
@@ -26,8 +26,8 @@
             margin-inline-end: 0px;
         }
         body {
-            width: 18.6cm;
-            font-size: 30px;
+            width: 100%;
+            font-size: 25px;
 	    background-color: #FFFFFF;
         }
         ul li {
@@ -77,6 +77,7 @@
     </style>
 <br />
 <!-- 头部区域 -->
+
 
 
 
@@ -308,101 +309,7 @@
 	</div>
 </div>
 </body>
-<script type="text/javascript">
-    function addStyle(styleTxt, media) {
-        let styleNode = document.createElement("style");
-        styleNode.media = media;
-
-        try {
-            styleNode.appendChild(document.createTextNode(styleTxt));
-        } catch (ex) {
-            // 针对IE
-            styleNode.styleSheet.cssText = styleTxt;
-        }
-
-        // 添加到 head 节点
-        let headNode = document.getElementsByTagName("head")[0];
-        headNode.appendChild(styleNode);
-    }
-
-    (function(){
-
-        // 模拟打印预览页面，将整个 body 区域缩小
-
-        // 获取屏幕分辨率
-        let dpiXY = new Array();
-        if (window.screen.deviceXDPI != undefined) {
-            dpiXY[0] = window.screen.deviceXDPI;
-            dpiXY[1] = window.screen.deviceYDPI;
-        } else {
-            let tmpNode = document.createElement("DIV");
-            tmpNode.style.cssText = "width:1in;height:1in;position:absolute;left:0px;top:0px;z-index:99;visibility:hidden";
-            document.body.appendChild(tmpNode);
-            dpiXY[0] = parseInt(tmpNode.offsetWidth);
-            dpiXY[1] = parseInt(tmpNode.offsetHeight);
-            tmpNode.parentNode.removeChild(tmpNode);
-        }
-
-        // 打印宽度为A4纸的宽度，21 cm
-        let printWidth_cm = 21.0;
-        let printWidth_px;
-        if (dpiXY[0] == 96) {
-            // dpi 为 96 时，计算单位为像素的打印宽度
-            printWidth_px = printWidth_cm * 37.795;
-        } else {
-            // dpi 为 72（默认） 时，计算单位为像素的打印宽度
-            printWidth_px = printWidth_cm * 28.346;
-        }
-
-        // body 打印样式
-        let bodyCssForScreen = "body {";
-
-        // 屏幕宽度小于打印宽度时进行缩放处理
-        if (screen.width < printWidth_px) {
-            // 缩放比例
-            let rate = screen.width / printWidth_px * 0.80;
-            // 水平方向偏移量，用于调整缩放后的位置到屏幕中央。
-            // 计算公式： screen.width * 0.1
-            // 0.1 = (1 - 0.8) / 2，根据实际情况，围绕 0.1 上下略作浮动
-            let offsetX = screen.width * 0.14;
-
-            // 缩放比例
-            bodyCssForScreen += "-webkit-transform: scale(" + rate + ");";
-            bodyCssForScreen += "transform: scale(" + rate + ");";
-            // 缩放参考点，保证缩放后， body 区域在适当的位置
-            bodyCssForScreen += "-webkit-transform-origin: " + offsetX + "px 15px;";
-            bodyCssForScreen += "transform-origin: " + offsetX + "px 15px;";
-        }
-        bodyCssForScreen += "}";
-
-        // 缩放样式仅用于屏幕展示（对打印无效），必须指定 media = "screen"
-        addStyle(bodyCssForScreen, "screen");
-    })();
-    (function() {
-
-        // 处理页边距
-
-        let bodyCssForPrint = "body {";
-
-        if (navigator.userAgent.indexOf('iPhone') >= 0 || navigator.userAgent.indexOf('iPad') >= 0) {
-            // ios 上的 safari 浏览器不支持 @page 样式，需要借助 body 的 width、 padding 和 margin 互相配合，间接实现页边距
-            // 注意：
-            //      1、 该方法只能保证左右页边距， 以及首页的顶部边距，分页后的上边距和前一页的下边距会非常小，目前没办法处理
-            //      2、 原本 body 的 width 应该设置为 18cm （A4 纸宽度减去左右各 1.5cm 的页边距），但是多次测试后，发现设置为 17cm 才能达到效果
-            bodyCssForPrint += "width: 18.5cm !important;";
-            bodyCssForPrint += "padding: 1.2cm !important;";
-            bodyCssForPrint += "margin: 0;";
-        } else {
-            // android 系统的页边距通过 @page 的 margin 属性即可指定，所以 这里的 padding 和 margin 都要设置为 0
-            bodyCssForPrint += "padding: 0 !important;";
-            bodyCssForPrint += "margin: 0 !important;";
-        }
-        bodyCssForPrint += "}";
-        // 仅用于打印样式
-        addStyle(bodyCssForPrint, "print");
-    })();
-</script>
- <script> 
+<script> 
     function updateClock() {
       var now = new Date(); 
       var hours = now.getHours();  
@@ -458,6 +365,9 @@
 
 
 </script> 
+
+
+
 
 
 </html>
