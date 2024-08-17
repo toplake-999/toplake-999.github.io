@@ -2,7 +2,7 @@
 .tab-container {
   display: flex; /* 水平排列选项卡按钮 */
   justify-content: center; /* 居中对齐 */
-  padding: 5px; /* 内边距 */
+  padding: 1px; /* 内边距 */
   background-color: #FFFFFF; /* 背景颜色 */
   height: 50px;
   
@@ -12,7 +12,7 @@
 .tab {
   cursor: pointer; /* 鼠标指针变为手型 */
   padding: 1px; /* 内边距 */
-  margin-right: 11px; /* 外边距 */
+  margin-right: 2px; /* 外边距 */
   border-bottom: 5px solid transparent; /* 底部边框 */
 }
 
