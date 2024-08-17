@@ -2,6 +2,12 @@
 const tabs = document.querySelectorAll('.tab');
 const contents = document.querySelectorAll('.content');
 
+
+let content = document.querySelector('tab1');
+    content.style.display = 'block';
+
+
+
 // 为每个选项卡按钮添加点击事件监听器
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
