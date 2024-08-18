@@ -323,15 +323,15 @@
     rows.forEach(row => {
       row.style.backgroundColor = row.style.backgroundColor === 'white' ? '' : 'white';
     });
-  }, 1000);
+  }, 2000);
 
-let rows2 = document.querySelectorAll('table tr:nth-child(even)');
+setTimeout(function() {
     setInterval(function() {
-    rows2.forEach(row => {
-      row.style.backgroundColor = row.style.backgroundColor === 'Thistle' ? '' : 'Thistle';
+    rows.forEach(row => {
+      row.style.backgroundColor = row.style.backgroundColor === 'Tan' ? '' : 'Tan';
     });
-  }, 500);
-
+  }, 2000);
+}, 1000);
 
 
 
