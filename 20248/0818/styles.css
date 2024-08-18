@@ -24,7 +24,7 @@ border-color: #02a982;
 /* 鼠标悬停时的选项卡按钮样式 */
 .tab:hover {
   border-bottom: 10px solid #ff5500; /* 底部边框颜色 */
-background-color: #60D978; /* 背景颜色 */
+background-color: lightgreen; /* 背景颜色 */
 }
 
 /* 内容区域样式 */
