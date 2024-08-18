@@ -325,10 +325,10 @@
     });
   }, 2000);
 
-let rows = document.querySelectorAll('table tr:nth-child(even)');
+let rows1 = document.querySelectorAll('table tr:nth-child(even)');
 setTimeout(function() {
     setInterval(function() {
-    rows.forEach(row => {
+    rows1.forEach(row => {
       row.style.backgroundColor = row.style.backgroundColor === 'Thistle' ? '' : 'Thistle';
     });
   }, 2000);
