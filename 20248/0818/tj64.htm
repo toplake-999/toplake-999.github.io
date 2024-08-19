@@ -304,6 +304,13 @@
   </table>
  
 <script>
+let qrows = document.querySelectorAll('table tr:nth-child(even)');
+  setInterval(function() {
+    qrows.forEach(row => {
+      row.style.backgroundColor = row.style.backgroundColor === 'Tan' ? '' : 'Tan';
+    });
+  }, 2000);
+
 
   let rows = document.querySelectorAll('table tr:nth-child(odd)');
   setInterval(function() {
@@ -312,12 +319,7 @@
     });
   }, 2000);
 
-let qrows = document.querySelectorAll('table tr:nth-child(even)');
-  setInterval(function() {
-    qrows.forEach(row => {
-      row.style.backgroundColor = row.style.backgroundColor === 'Tan' ? '' : 'Tan';
-    });
-  }, 2000);
+
 
 </script>
 
