@@ -305,7 +305,7 @@
  
 <script>
 let qrows = document.querySelectorAll('table tr:nth-child(even)');
-  setInterval(function() {
+  var interval1 = setInterval(function() {
     qrows.forEach(row => {
       row.style.backgroundColor = row.style.backgroundColor === 'Tan' ? '' : 'Tan';
     });
@@ -313,7 +313,7 @@ let qrows = document.querySelectorAll('table tr:nth-child(even)');
 
 
   let rows = document.querySelectorAll('table tr:nth-child(odd)');
-  setInterval(function() {
+  var interval2 = setInterval(function() {
     rows.forEach(row => {
       row.style.backgroundColor = row.style.backgroundColor === 'white' ? '' : 'white';
     });
