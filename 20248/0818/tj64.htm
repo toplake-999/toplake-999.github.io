@@ -304,13 +304,13 @@
   </table>
  
 <script>
-let rows1 = document.querySelectorAll('table tr:nth-child(even)');
+let rowss = document.querySelectorAll('table tr:nth-child(even)');
   let rows = document.querySelectorAll('table tr:nth-child(odd)');
   setInterval(function() {
     rows.forEach(row => {
       row.style.backgroundColor = row.style.backgroundColor === 'white' ? '' : 'white';
     });
-  rows1.forEach(row => {
+  rowss.forEach(row => {
       row.style.backgroundColor = row.style.backgroundColor === 'Tan' ? '' : 'Tan';
     });
   }, 2000);
