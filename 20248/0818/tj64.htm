@@ -304,21 +304,20 @@
   </table>
  
 <script>
+let rows1 = document.querySelectorAll('table tr:nth-child(even)');
   let rows = document.querySelectorAll('table tr:nth-child(odd)');
   setInterval(function() {
     rows.forEach(row => {
       row.style.backgroundColor = row.style.backgroundColor === 'white' ? '' : 'white';
     });
-  }, 2000);
-
-
-let rows1 = document.querySelectorAll('table tr:nth-child(even)');
-    setInterval(function() {
-    rows1.forEach(row => {
+  rows1.forEach(row => {
       row.style.backgroundColor = row.style.backgroundColor === 'Tan' ? '' : 'Tan';
     });
   }, 2000);
 
+
+
+   
 
 
 </script>
