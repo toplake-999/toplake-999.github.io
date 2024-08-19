@@ -307,13 +307,12 @@
 
 
 function  xunhuan(){  
-let rows = document.querySelectorAll('table tr:nth-child(even)');
+let rows = document.querySelectorAll('table tr:nth-child(odd)');
 rows.forEach(row => {
       row.style.backgroundColor = row.style.backgroundColor === 'white' ? '' : 'white';
     });
-
-let rows = document.querySelectorAll('table tr:nth-child(odd)');
-rows.forEach(row => {
+let arows = document.querySelectorAll('table tr:nth-child(even)');
+arows.forEach(row => {
       row.style.backgroundColor = row.style.backgroundColor === 'Tan' ? '' : 'Tan';
     });
 }
