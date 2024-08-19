@@ -304,20 +304,25 @@
   </table>
  
 <script>
+
+
+function  xunhuan(){  
 let qrows = document.querySelectorAll('table tr:nth-child(even)');
-  var interval1 = setInterval(function() {
-    qrows.forEach(row => {
-      row.style.backgroundColor = row.style.backgroundColor === 'Tan' ? '' : 'Tan';
-    });
-  }, 500);
-
-
-  let rows = document.querySelectorAll('table tr:nth-child(odd)');
-  var interval2 = setInterval(function() {
-    rows.forEach(row => {
+qrows.forEach(row => {
       row.style.backgroundColor = row.style.backgroundColor === 'white' ? '' : 'white';
     });
-  }, 500);
+
+let rows = document.querySelectorAll('table tr:nth-child(odd)');
+rows.forEach(row => {
+      row.style.backgroundColor = row.style.backgroundColor === 'Tan' ? '' : 'Tan';
+    });
+}
+
+setInterval("xunhuan()",1000);
+window.onload=xunhuan;
+
+
+
 
 
 
