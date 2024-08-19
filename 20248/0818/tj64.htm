@@ -322,6 +322,26 @@ rowss.forEach(row => {
 
 
 </script>
+<script>
+
+  let rows = document.querySelectorAll('table tr:nth-child(even)');
+  setInterval(function() {
+    rows.forEach(row => {
+      row.style.backgroundColor = row.style.backgroundColor === 'white' ? '' : 'white';
+    });
+  }, 2000);
+
+let rowss = document.querySelectorAll('table tr:nth-child(odd)');
+rowss.forEach(row => {
+      row.style.backgroundColor = row.style.backgroundColor === 'Tan' ? '' : 'Tan';
+    });
+
+
+   
+
+
+</script>
+
  
 </body>
 </html>
