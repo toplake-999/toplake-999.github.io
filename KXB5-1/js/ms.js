@@ -34,7 +34,7 @@
     
     window.onload = function() {
       updateClock();
-  var audio = new Audio('https://zjh-cms-transform.oss-cn-hangzhou.aliyuncs.com/ms%2F330000%2F20220926%2F82220f098809d49b1f88868c417240a6%2F231bc27c2b5fb65f25821437ff4c9f10.mp3');
+  var audio = new Audio('https://zjh-cms-transform.oss-cn-hangzhou.aliyuncs.com/gfs_mnt%2Fdata1%2F2024%2F8%2F15%2F14%2F16%2F129149%2F6a7374d534e04d7e82f761ab6ba3385a%2F3c339b45122c69328f52e650abe48403.mp3');
    audio.loop = true;
  audio.play(); 
     };
