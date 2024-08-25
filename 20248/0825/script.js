@@ -4,12 +4,7 @@ const contents = document.querySelectorAll('.content');
 
 
     
- window.onload = function() {
-      updateClock();
-  var audio = new Audio('https://zjh-cms-transform.oss-cn-hangzhou.aliyuncs.com/gfs_mnt%2Fdata1%2F2024%2F8%2F15%2F14%2F32%2F129149%2Fb8e3f859a01e45309382eb952f4a445c%2F8da925f04704696e1f355fe160940dc7.mp3');
-   audio.loop = true;
- audio.play(); 
-    };
+
 
 
 // 为每个选项卡按钮添加点击事件监听器
